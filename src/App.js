@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Timer from "./components/Timer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex">
+      <div className="title py-4 text-center align-content-center">title</div>
+      <div className="Banner py-5 text-center flex align-content-center  ">
+        Banner
+      </div>
+      <div className="detalis py-3  ">
+        <div className="contents">
+          <div>Banner Toggle</div>
+          <div>Discription</div>
+          <div>Url</div>
+        </div>
+
+        <Timer></Timer>
+      </div>
     </div>
   );
 }
